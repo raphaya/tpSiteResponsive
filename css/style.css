@@ -1,0 +1,241 @@
+html{
+	font-size: 62.5%;
+	font-family:cursive;
+}
+
+h1{
+	font-size: 4vw;
+	margin:0;
+}
+
+body{
+	font-size: 1.6rem;
+	margin: 0;
+}
+
+p{
+	text-align: justify;
+}
+
+ul#menu li { 
+	display : inline;
+	padding : 0 0.7em;
+}
+
+ul#menu {
+	list-style-type : none;	
+	text-align: right;
+	margin-left: 20em;
+}
+
+.content{
+	display:block;
+	width:90%;
+	margin:2vw auto;
+}
+
+#imgMain{
+	display:block;
+	width:65%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo{
+	width: 30%;
+}
+
+.miniature{
+	display:inline-block;
+	width: 25%;
+	text-align: center;
+	margin:0;
+}
+
+.miniature img{
+	width:60%;
+}
+
+.miniature p{
+	text-align: center;
+}
+
+#map{
+	width:60%;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+#form{
+	width:40%;
+	float:right;
+}
+
+#name input{
+	width:45%;
+}
+
+#birth{
+	margin-top:1vw;
+}
+
+#birth input{
+	width:45%;
+}
+
+#last input{
+	width:100%;
+}
+
+#last{
+	margin-top:1vw;
+}
+
+textarea{
+	width:100%;
+}
+
+#lastname{
+	float:right;
+}
+
+#city{
+	float:right;
+}
+
+#mapform{
+	display: block;
+	margin-bottom: 20em;
+}
+
+footer{
+	width:90%;
+	border-top: solid lightblue 1px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#author{
+	float:right;
+}
+
+header{
+	width:90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.headerElement{
+	display:inline-block;
+}
+
+@media screen and (max-width: 900px){
+	.content{
+		width:100%;
+	} 
+
+	#logo{
+		margin-right: auto;
+		margin-left: auto;
+		display:block;
+	}
+
+	.miniature{
+		display:inline-block;
+		width: 50%;
+		text-align: center;
+		margin:0;
+	}
+
+	#corps h1{
+		padding: 0 0.5em;
+	}
+
+	#corps p{
+		padding: 0 0.5em;
+	}
+
+	#name input{
+		width:100%;
+	}
+
+	#birth{
+		margin-top:1vw;
+	}
+
+	#birth input{
+		width:100%;
+	}
+
+	#last input{
+		width:100%;
+	}
+
+	#last{
+		margin-top:1vw;
+	}
+
+	textarea{
+		width:100%;
+	}
+
+	#submitButton{
+		width:100%;
+		float: right;
+	}
+
+	form{
+		padding:1 1em;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+
+	#menuDiv{
+		margin-right: auto;
+		margin-left: auto;
+		display:block;
+		float:left;
+	}
+
+	#menu{
+		display:block;
+		padding:0;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 640px){
+	.miniature{
+		display:inline-block;
+		width: 100%;
+		text-align: center;
+		margin:0;
+	}
+
+	#map{
+		width:100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#form{
+		width:100%;
+		margin-left: auto;
+		margin-right: auto;	}
+
+	input{
+		width:100%;
+	}
+
+	#menuDiv{
+		display:none;
+	}
+
+	#search{
+		display:none;
+	}
+
+}

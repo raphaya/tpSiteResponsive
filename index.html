@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable="yes"">
+		<title>Un site pour un tp</title>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		
+		<script>
+		function initialize() {
+		  var mapProp = {
+		    center:new google.maps.LatLng(51.508742,-0.120850),
+		    zoom:5,
+		    mapTypeId:google.maps.MapTypeId.ROADMAP
+		  };
+		  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
+	</head>
+	<body>
+		<header>
+			<div id="logoDiv" class="headerElement">
+				<img id="logo" src="./img/logoLorem.jpg">
+			</div>
+			<div id="menuDiv" class="headerElement">
+				<ul id="menu">
+					<li><a href="http://fr.lipsum.com/feed/html">Lorem</a></li>
+					<li><a href="http://fr.lipsum.com/feed/html">Ipsum</a></li>
+					<li><a href="#form">Contact</a></li>
+					<li><input type="search" placeholder="Recherche" name="search"/></li>
+				</ul>
+			</div>
+		</header>
+
+		<div class="content">
+			<div id="corps">
+				<img id="imgMain" src="./img/loremIpsum.jpg">
+				<h1>Lorem Ipsum</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut erat ante. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris vulputate mauris in nisi tempor, at sagittis nisl malesuada. Duis ut feugiat diam, eget aliquet augue. Duis maximus sit amet eros a accumsan. Cras auctor convallis pulvinar. Etiam maximus augue ac interdum scelerisque. Vivamus efficitur scelerisque mi, quis suscipit justo viverra id. Sed ut augue maximus, tempus massa et, ornare lacus. Pellentesque a urna congue, semper sapien sit amet, finibus risus. Nunc auctor est mauris, et maximus arcu bibendum eu. Phasellus sollicitudin justo sit amet orci sodales, et tincidunt diam iaculis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur non hendrerit sem. Aliquam rutrum libero ac lacinia bibendum. Ut vitae placerat ex.</p>
+				<div id="liste_img">
+					<div class="miniature">
+						<img src="./img/lorem-ipsum.jpg">
+						<h3>Lorem Ipsum</h3>
+						<p>Lorem ipsum dolor sit amet.</p>
+					</div><div class="miniature">
+						<img src="./img/lorem-ipsum.jpg">
+						<h3>Lorem Ipsum</h3>
+						<p>Lorem ipsum dolor sit amet.</p>			
+					</div><div class="miniature">
+						<img src="./img/lorem-ipsum.jpg">
+						<h3>Lorem Ipsum</h3>
+						<p>Lorem ipsum dolor sit amet.</p>			
+					</div><div class="miniature">
+						<img src="./img/lorem-ipsum.jpg">
+						<h3>Lorem Ipsum</h3>
+						<p>Lorem ipsum dolor sit amet.</p>			
+					</div>
+				</div>
+			</div>
+			<div id="mapform">
+				<div id="map">
+					<h2>Google maps</h2>
+					<div id="googleMap" style="width:200px; height:200px;"></div>
+				</div>
+				<div id="form">
+					<h2>Formulaire</h2>
+					<div id="name">
+						<input type="text" name="firstname" placeholder="Prénom"/>
+						<input id="lastname" type="text" name="lastname" placeholder="Nom"/>
+					</div>
+					<div id="birth">
+						<input type="date" name="date" placeholder="Date de naissance"/>
+						<input id="city" type="text" name="city" placeholder="Ville de naissance"/>
+					</div>
+					<div id="last">
+						<input type="mail" name="email" placeholder="Adresse Email"/>
+						<input type="file" name="file"/>
+						<textarea name="message" placeholder="Message"></textarea>
+					</div>
+					<input id="submitButton" type="submit" value="Submit"/>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p id="author">AYALA Raphaël</p>
+		</footer>
+	</body>
+</html>
